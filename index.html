@@ -363,7 +363,100 @@
         <div class="form-section">
             <h3>30-Minute VIP Consultation Booking</h3>
 
-            <form action="https://formspree.io/f/xrpzrdyk"method="POST" id="consultationForm">
+            <form a<form action="https://formspree.io/f/xrpzrdyk" method="POST">
+    <div class="success-message" id="successMessage">
+        ✅ Thank you! Your consultation request has been submitted. We'll confirm via email within 24 hours.
+    </div>
+
+    <div class="form-row">
+        <div class="form-group">
+            <label for="name">Full Name *</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+    </div>
+
+    <div class="form-row">
+        <div class="form-group">
+            <label for="phone">Phone / WhatsApp</label>
+            <input type="tel" id="phone" name="phone">
+        </div>
+        <div class="form-group">
+            <label for="location">Current Location / Country</label>
+            <input type="text" id="location" name="location" placeholder="e.g., Dubai, UAE">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="tripType">What type of luxury travel are you interested in? *</label>
+        <select id="tripType" name="tripType" required>
+            <option value="">-- Select --</option>
+            <option value="5-star-hotels">Luxury 5-Star Hotel Stays</option>
+            <option value="honeymoon">Honeymoon Planning</option>
+            <option value="family">Family Luxury Vacation</option>
+            <option value="cruise">Cruise Experiences</option>
+            <option value="adventure">Luxury Adventure</option>
+            <option value="custom">Custom Luxury Itinerary</option>
+            <option value="unsure">Not sure - want recommendations</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="destination">Dream Destination (or let us suggest)</label>
+        <input type="text" id="destination" name="destination" placeholder="e.g., Paris, Maldives, Tuscany">
+    </div>
+
+    <div class="form-group">
+        <label for="timeline">When are you planning to travel? *</label>
+        <input type="date" id="timeline" name="timeline" required>
+    </div>
+
+    <div class="form-group">
+        <label for="budget">Approximate Budget (5 nights) *</label>
+        <select id="budget" name="budget" required>
+            <option value="">-- Select --</option>
+            <option value="3000-5000">€3,000 - €5,000</option>
+            <option value="5000-10000">€5,000 - €10,000</option>
+            <option value="10000-20000">€10,000 - €20,000</option>
+            <option value="20000+">€20,000+</option>
+            <option value="flexible">Flexible - Recommend Options</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="travelers">Number of Travelers *</label>
+        <select id="travelers" name="travelers" required>
+            <option value="">-- Select --</option>
+            <option value="1">Just me (solo traveler)</option>
+            <option value="2">2 people (couple)</option>
+            <option value="3-5">3-5 people (family)</option>
+            <option value="6+">6+ people (group)</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="message">Any Special Requests or Questions?</label>
+        <textarea id="message" name="message" placeholder="Tell us about your vision, any special occasions, preferences..."></textarea>
+    </div>
+
+    <div class="form-group">
+        <div class="checkbox-group">
+            <label>
+                <input type="checkbox" id="subscribe" name="subscribe" value="yes" checked>
+                Yes, send me exclusive luxury travel deals and inspiration
+            </label>
+            <label>
+                <input type="checkbox" id="agree" name="agree" value="yes" required>
+                I agree to be contacted about my consultation request
+            </label>
+        </div>
+    </div>
+
+    <button type="submit" class="submit-btn">📧 Request Your VIP Consultation</button>
+</form>Form">
                 <div class="success-message" id="successMessage">
                     ✅ Thank you! Your consultation request has been submitted. We'll confirm via email within 24 hours.
                 </div>
